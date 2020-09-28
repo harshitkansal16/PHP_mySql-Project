@@ -41,11 +41,12 @@ if(isset($_POST['submit']))
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="login.css">
 </head>
 
-<body style="background-color:green; text-align:center;">
+<body>
 <div class="container">
-<img src="4.jpeg" style="margin-top:30px;" class="mx-auto d-block" width="200vh" height="200vh"></div>
+<img src="4.jpeg" style="margin-top:30px;" class="mx-auto d-block logo" width="200vh" height="200vh"></div>
 <div id="error"><?php echo $error; ?> </div>
 <div id="wrapper">
 
@@ -53,12 +54,12 @@ if(isset($_POST['submit']))
 <form method="POST" style="margin-top:30px;">
 
 <label>User Name</label><br>
-<input type="text" name="email"><br><br>
+<input type="text" name="email" placeholder="user name"><br><br>
 <label>password</label><br>
-<input type="password" name="password"><br><br>
-<input type="checkbox" name="keep">
-<label>keep me logged in</label><br><br>
-<input type="submit" name="submit">
+<input type="password" name="password" placeholder="password"><br><br>
+
+<label class="keep"><input type="checkbox" name="keep">keep me logged in</label><br><br>
+<input type="submit" name="submit" class="btn">
 </form>
 </div>
 </div>

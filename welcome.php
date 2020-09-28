@@ -59,29 +59,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="welcome.css">
+<!--  fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
-<body style="background-color:green; text-align:center;">
+<body>
 <div class="container">
-            <img src="4.jpeg" class="mx-auto d-block" width="200vh" height="200vh"></div>
-            <h1>Sign Up</h1>
+            <img src="4.jpeg" class="mx-auto d-block logo"></div>
+            <h1>Sign Up Here!</h1>
 <div id="error"><?php echo $error; ?> </div>
 <div id="wrapper">
 <div id="formDiv">
    
 <form method="POST">
 <label>First Name</label><br>
-<input type="text" name="fname"><br><br>
+<input type="text" name="fname" placeholder="fname"><br><br>
 <label>Last Name</label><br>
-<input type="text" name="lname"><br><br> 
+<input type="text" name="lname" placeholder="lname"><br><br> 
 <label>User Name</label><br>
-<input type="text" name="email"><br><br>
+<input type="text" name="email" placeholder="email"><br><br>
 <label>Password</label><br>
-<input type="password" name="password"><br><br>
+<input type="password" name="password" placeholder="password"><br><br>
 <label>Confirm Password</label><br>
-<input type="password" name="cpassword"><br><br><br> 
+<input type="password" name="cpassword" placeholder="confirm password"><br><br><br> 
 
-<input type="submit" name="submit">
+<input type="submit" name="submit" class="btn">
 </form>
-<h2 style="text-align:center;">If u Have already a Account then <a href="login.php">Log in</a></h2>
+    <h4>Already have an account?<a href="login.php"> Log in</a></h4></div></div>
 </body>
 </html>

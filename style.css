@@ -5,7 +5,17 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: darkgreen;
+  
+}
+body{
+    text-align: center;
+    background-color: #ebecf1;
+    text-align: center;
+}
+.tag{
+     font-family: 'Montserrat', sans-serif;
+     background-color: black;
+    color: #fff;
 }
 p
 {
@@ -23,18 +33,17 @@ p
     color:black;
 }
 
-.row h2{
-    font-size:40px;
-    color:green;
-    text-align: center;
-}
-
-.my-5 a{
-    text-align: center;
-    font-size: 30px;
-}
 h2{
     text-align: center;
     color: green;
     font-size:40px;
+}
+.image{
+    width:30rem;
+    height: 40rem;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .4s;
+}
+.image:hover{
+    transform: scale(1.05);
 }
